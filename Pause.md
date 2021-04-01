@@ -21,14 +21,14 @@ M125 is pretty same the M25 command. You can use it before M600 if you have PARK
 
 ## Some useful example
 ### M0 usage
-> G91                  ; imposta le coordinate in relative <br />
-> G1 Z10               ; alza l'ugello di 10 mm <br />
-> G90                  ; imposta le coordinate in assolute <br />
-> G1 X0 Y180 F1000           ; sposta il carrello alle coordinate x e y che indicate <br />
-> M400 <br />
-> M300 S300 P1000 ; avviso acustico <br />
-> M0 Premi per ripartire  ; comando che attende la pressione del taso dello schermo <br />
-> G91                  ; imposta le coordinate in relative <br />
-> G1 Z-10              ; abbassa l'ugello di 10 mm <br />
-> G90                  ; imposta le coordinate in assolute <br />
+> G91                  ; relative coordinates <br />
+> G1 Z20               ; move nozzle up 20 mm <br />
+> G90                  ; absolute coordinates <br />
+> G1 X0 Y180 F1000     ; move nozzle to these coordinates <br />
+> M400 <br />          ; wait movement finishes
+> M300 S300 P1000      ; acoustic signal, it play a simple beep <br />
+> M0                   ; pause <br />
+> G91                  ; relative coordinates <br />
+> G1 Z-20              ; move nozzle down 20 mm <br />
+> G90                  ; absolute coordinates <br />
 
