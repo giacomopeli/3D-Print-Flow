@@ -16,8 +16,9 @@ M25 could be the best option if you want to try different parameters as temperat
 In Marlin firmware you can set PARK_HEAD_ON_PAUSE which move the extruder block in the set position before pausing the print. This avoid the blob or artifacts.
 That's the preferred option as it is the most versitile option (as it give you access on what the M0, M1, M600 commands do).
 
+## M125 - Park Head 
+M125 is pretty same the M25 command. You can use it before M600 if you have PARK_HEAD_ON_PAUSE enabled and well set. Try it if you have problem with M25.
+
 ## Some useful example
-> M0
-> M1
-> 
+
 
