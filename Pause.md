@@ -22,7 +22,7 @@ M125 is pretty same the M25 command. You can use it before M600 if you have PARK
 ## Some useful example
 You can copy and paste in Batch Printing, but better if you look on what you're doing.
 
-### M0 usage
+### M0 and M1 usage
 > G91                  ; relative coordinates <br />
 > G1 Z20               ; move nozzle up 20 mm <br />
 > G90                  ; absolute coordinates <br />
