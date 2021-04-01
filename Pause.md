@@ -8,7 +8,7 @@ The printer wait for a simple click input.
 ## M600 - Change Filament Pause
 M600 does a simple change filament: raise the extruder block, unload filament, wait for filament loaded, extruder does a purge and then it restarts the print process.
 This will be useful if you need to see how a print came out with different filament.
-You need to set it before in your Marlin firmware, then compile it. In most case, if you don't set it properly after some seconds it starts the cooling process wasting time to heat up.
+You need to set it before in your Marlin firmware, then compile it. In most case, if you don't set it properly after some seconds it starts the cooling process wasting time to heat up. You need to enable it in firmware defining and setting NOZZLE_PARK_FEATURE and ADVANCED_PAUSE_FEATURE.
 
 ## M25 - Pause SD Print
 M25 does a pause as you would do it during the print process. Using M25, unlike M0, M1 and M600, allows you to access the whole menu of the printing process, even the "Change filament" (M600 command) too.
@@ -33,4 +33,31 @@ You can copy and paste in Batch Printing, but better if you look on what you're 
 > G91                  ; relative coordinates <br />
 > G1 Z-20              ; move nozzle down 20 mm <br />
 > G90                  ; absolute coordinates <br />
+
+### M25 and M125 usage
+Before, for a smart use, define on your firmware PARK_HEAD_ON_PAUSE and NOZZLE_PARK_FEATURE.
+Then you can use these commands in Batch Printing.
+
+> M25                   ; pause <br />
+
+Very simple.
+
+If you don't want touch your firmware you can use temporarely these commands.
+
+> G91                  ; relative coordinates <br />
+> G1 Z20               ; move nozzle up 20 mm <br />
+> G90                  ; absolute coordinates <br />
+> G1 X0 Y180 F1000     ; move nozzle to these coordinates <br />
+> M400                 ; wait movement finishes <br />
+> M300 S300 P1000      ; acoustic signal, it play a simple beep <br />
+> M25                   ; pause <br />
+> G91                  ; relative coordinates <br />
+> G1 Z-20              ; move nozzle down 20 mm <br />
+> G90                  ; absolute coordinates <br />
+
+
+### M600 usage
+Before, for a smart use, define and set on your firmware NOZZLE_PARK_FEATURE and ADVANCED_PAUSE_FEATURE. If you don't enable these features it would not work.
+
+> M600                 ; change filament
 
