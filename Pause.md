@@ -23,6 +23,7 @@ M125 is pretty same the M25 command. You can use it before M600 if you have PARK
 You can copy and paste in Batch Printing, but better if you look on what you're doing.
 
 ### M0 and M1 usage
+```
 > G91                  ; relative coordinates <br />
 > G1 Z20               ; move nozzle up 20 mm <br />
 > G90                  ; absolute coordinates <br />
@@ -33,17 +34,18 @@ You can copy and paste in Batch Printing, but better if you look on what you're 
 > G91                  ; relative coordinates <br />
 > G1 Z-20              ; move nozzle down 20 mm <br />
 > G90                  ; absolute coordinates <br />
+```
 
 ### M25 and M125 usage
 Before, for a smart use, define on your firmware PARK_HEAD_ON_PAUSE and NOZZLE_PARK_FEATURE.
 Then you can use these commands in Batch Printing.
-
+```
 > M25                   ; pause <br />
-
+```
 Very simple.
 
 If you don't want touch your firmware you can use temporarely these commands.
-
+```
 > G91                  ; relative coordinates <br />
 > G1 Z20               ; move nozzle up 20 mm <br />
 > G90                  ; absolute coordinates <br />
@@ -54,10 +56,11 @@ If you don't want touch your firmware you can use temporarely these commands.
 > G91                  ; relative coordinates <br />
 > G1 Z-20              ; move nozzle down 20 mm <br />
 > G90                  ; absolute coordinates <br />
-
+```
 
 ### M600 usage
 Before, for a smart use, define and set on your firmware NOZZLE_PARK_FEATURE and ADVANCED_PAUSE_FEATURE. If you don't enable these features it would not work.
-
+```
 > M600                 ; change filament
+```
 
