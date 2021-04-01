@@ -21,8 +21,8 @@ M125 is pretty same the M25 command. You can use it before M600 if you have PARK
 
 ## Some useful example
 ### M0 usage
-G91                  ; imposta le coordinate in relative
-G1 Z10               ; alza l'ugello di 10 mm
+> G91                  ; imposta le coordinate in relative
+> G1 Z10               ; alza l'ugello di 10 mm
 G90                  ; imposta le coordinate in assolute
 G1 X0 Y180 F1000           ; sposta il carrello alle coordinate x e y che indicate
 M400
