@@ -1,4 +1,4 @@
-This is a guide of the common and recommended pause for your gcode.
+#Simple Pause Guide
 
 M0 and M1 - Simple Pause
 M0 and M1 do the same type of pause. During the print, when the machine arrives to read the M0 or M1 line of the gcode simply stop the extruder block at the last position.
