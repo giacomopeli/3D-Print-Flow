@@ -24,43 +24,43 @@ You can copy and paste in Batch Printing, but better if you look on what you're 
 
 ### M0 and M1 usage
 ```
-> G91                  ; relative coordinates 
-> G1 Z20               ; move nozzle up 20 mm
-> G90                  ; absolute coordinates 
-> G1 X0 Y180 F1000     ; move nozzle to these coordinates 
-> M400                 ; wait movement finishes 
-> M300 S300 P1000      ; acoustic signal, it play a simple beep
-> M0                   ; pause 
-> G91                  ; relative coordinates 
-> G1 Z-20              ; move nozzle down 20 mm 
-> G90                  ; absolute coordinates 
+G91                  ; relative coordinates 
+G1 Z20               ; move nozzle up 20 mm
+G90                  ; absolute coordinates 
+G1 X0 Y180 F1000     ; move nozzle to these coordinates 
+M400                 ; wait movement finishes 
+M300 S300 P1000      ; acoustic signal, it play a simple beep
+M0                   ; pause 
+G91                  ; relative coordinates 
+G1 Z-20              ; move nozzle down 20 mm 
+G90                  ; absolute coordinates 
 ```
 
 ### M25 and M125 usage
 Before, for a smart use, define on your firmware PARK_HEAD_ON_PAUSE and NOZZLE_PARK_FEATURE.
 Then you can use these commands in Batch Printing.
 ```
-> M25                   ; pause
+M25                   ; pause
 ```
 Very simple.
 
 If you don't want touch your firmware you can use temporarely these commands.
 ```
-> G91                  ; relative coordinates
-> G1 Z20               ; move nozzle up 20 mm 
-> G90                  ; absolute coordinates 
-> G1 X0 Y180 F1000     ; move nozzle to these coordinates 
-> M400                 ; wait movement finishes 
-> M300 S300 P1000      ; acoustic signal, it play a simple beep 
-> M25                   ; pause 
-> G91                  ; relative coordinates 
-> G1 Z-20              ; move nozzle down 20 mm 
-> G90                  ; absolute coordinates 
+G91                  ; relative coordinates
+G1 Z20               ; move nozzle up 20 mm 
+G90                  ; absolute coordinates 
+G1 X0 Y180 F1000     ; move nozzle to these coordinates 
+M400                 ; wait movement finishes 
+M300 S300 P1000      ; acoustic signal, it play a simple beep 
+M25                   ; pause 
+G91                  ; relative coordinates 
+G1 Z-20              ; move nozzle down 20 mm 
+G90                  ; absolute coordinates 
 ```
 
 ### M600 usage
 Before, for a smart use, define and set on your firmware NOZZLE_PARK_FEATURE and ADVANCED_PAUSE_FEATURE. If you don't enable these features it would not work.
 ```
-> M600                 ; change filament
+M600                 ; change filament
 ```
 
