@@ -17,8 +17,18 @@ In Marlin firmware you can set PARK_HEAD_ON_PAUSE which move the extruder block 
 That's the preferred option as it is the most versitile option (as it give you access on what the M0, M1, M600 commands do).
 
 ## M125 - Park Head 
-M125 is pretty same the M25 command. You can use it before M600 if you have PARK_HEAD_ON_PAUSE enabled and well set. Try it if you have problem with M25.
+M125 is pretty same the M25 command. You can use it before M600 if you have PARK_HEAD_ON_PAUSE enabled and well set. Try it if you have problem with M25. Probably if you print from USB device or USB port M125 is more convenient.
 
 ## Some useful example
-
+### M0 usage
+G91                  ; imposta le coordinate in relative
+G1 Z10               ; alza l'ugello di 10 mm
+G90                  ; imposta le coordinate in assolute
+G1 X0 Y180 F1000           ; sposta il carrello alle coordinate x e y che indicate
+M400
+M300 S300 P1000 ; avviso acustico
+M0 Premi per ripartire  ; comando che attende la pressione del taso dello schermo
+G91                  ; imposta le coordinate in relative
+G1 Z-10              ; abbassa l'ugello di 10 mm
+G90                  ; imposta le coordinate in assolute
 
