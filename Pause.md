@@ -15,3 +15,9 @@ M25 does a pause as you would do it during the print process. Using M25, unlike 
 M25 could be the best option if you want to try different parameters as temperature, fan speed, printing speed, accelertion and so on.
 In Marlin firmware you can set PARK_HEAD_ON_PAUSE which move the extruder block in the set position before pausing the print. This avoid the blob or artifacts.
 That's the preferred option as it is the most versitile option (as it give you access on what the M0, M1, M600 commands do).
+
+## Some useful example
+> M0
+> M1
+> 
+
