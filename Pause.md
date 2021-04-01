@@ -20,6 +20,8 @@ That's the preferred option as it is the most versitile option (as it give you a
 M125 is pretty same the M25 command. You can use it before M600 if you have PARK_HEAD_ON_PAUSE enabled and well set. Try it if you have problem with M25. Probably if you print from USB device or USB port M125 is more convenient.
 
 ## Some useful example
+You can copy and paste in Batch Printing, but better if you look on what you're doing.
+
 ### M0 usage
 > G91                  ; relative coordinates <br />
 > G1 Z20               ; move nozzle up 20 mm <br />
