@@ -1,1 +1,6 @@
-ciaoa tutti
+This is a guide of the common and recommended pause for your gcode.
+
+M0
+M1
+M600
+M25
