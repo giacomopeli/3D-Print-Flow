@@ -25,7 +25,7 @@ M125 is pretty same the M25 command. You can use it before M600 if you have PARK
 > G1 Z20               ; move nozzle up 20 mm <br />
 > G90                  ; absolute coordinates <br />
 > G1 X0 Y180 F1000     ; move nozzle to these coordinates <br />
-> M400 <br />          ; wait movement finishes
+> M400                 ; wait movement finishes <br />
 > M300 S300 P1000      ; acoustic signal, it play a simple beep <br />
 > M0                   ; pause <br />
 > G91                  ; relative coordinates <br />
