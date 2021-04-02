@@ -37,3 +37,5 @@ In your slicer you need to modify your start gcode and your end gcode in your sl
 
 ;end_endgcode
 ```
+### Pause gcode
+Please, look at Pause.md for more information.
