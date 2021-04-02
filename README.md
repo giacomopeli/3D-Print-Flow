@@ -13,3 +13,5 @@ With the first way your risk of wasting material and time are bigger than the se
 
 This software automates the second way giving you also the benefits of the first way. 
 
+## How does it function?
+Basically you prepare file .gcode of what you want to print and you will do it with your preferred slicer. Batch Printing recognises what part of the .gcode has to batch printed and cooks a .gcode multiplying your parts. Between the parts there's the option to execute custom commands, the print can be paused or the extruder block can be moved in order to hit the printed parts and free the bed. This is up to you, but you can see some example in Pause.md.
