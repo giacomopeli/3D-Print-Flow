@@ -1,9 +1,15 @@
 # Batch Printing
 
+## Summary
 The purpose of this software is to give a simple and efficient way of batch printing solutions. 
 
-As I 3D print almost every day, sometimes I need to create the same part more times. Today slicers give two solutions. The first, which is more obvious, consist of copying and placing the same part up to the bed results covered. In this case the printer prints the same layer for all the parts, goes high, prints the next layer and so on. The second way consist of printing the parts once at time. This way has the disadvantage of to be unable to place many parts because the extruder block volume doesn't have to touch the parts already printed. Really, this isn't a disadvantage because the print time is more or less the same and also takes less movements of the extruder, reducing stringing with viscous material as the PETG. Also, if first method is chosen, might be that a part detaches from the bed constraining the operator to stop the printer losing material already extruded and time. 
+There are a few ways to batch print, but this software will take you to the best way of doing it.
 
-So, printing one part at time is more reliable, but the print needs to be started many times, the printer needs to be powered up many times and all that is to made by you. Suppose to print a 50x50x50 mm part, 20 times, once a time, that your machine needs up to 3 minute to be hot and ready, and when a print finish the printer starts the cooldown (I suppose, as I'm cosindering a normal situation, that you want your machine cooldowns). Doing some maths, results that in this way, in the better case, 20x3 minutes are lost. 
+Normally when comes the need of producing the same part many times you cover your bed's surface until it results full. But what you will do if a part detached from the bed? Yes, you will throw away your batch. Same thing if the electric currents goes off. Resume print and you will see a defective layer on all the parts, not the best. But why continue doing this? There's no reason.
 
-Disclaimer: that's what I need and I'm not a programmer. I choose to code it in Python as I know its fundamental, but probably there is a better language. Because Python reliability and simplicity this source can be implemented almost everywhere.
+You can print the same part once a time and if you're having a mess you would not waste filament and time. It's logic. But what about time? Pretty the same as it is determined by the volume of your parts and not by how you print them. The only waste of time in this case is removing the print, re-heat up your bed and your nozzle, restart the print.
+
+With the first way your risk of wasting material and time are bigger than the second way, but with the second way you have to be near the printer and take care of the process.
+
+This software automates the second way giving you also the benefits of the first way. 
+
