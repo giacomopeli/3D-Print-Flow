@@ -32,6 +32,8 @@ In your slicer you need to modify your start gcode and your end gcode in your sl
 ```
 ;end_bodygcode
 ;start_endgcode
+
 [here goes your entire actual end gcode]
+
 ;end_endgcode
 ```
