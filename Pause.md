@@ -59,7 +59,7 @@ G90                  ; absolute coordinates
 ```
 
 ### M600 usage
-For a smart use,you must define and set on your firmware NOZZLE_PARK_FEATURE and ADVANCED_PAUSE_FEATURE before. If you don't enable these features it won't work.
+For a smart use, you must define and set on your firmware NOZZLE_PARK_FEATURE and ADVANCED_PAUSE_FEATURE before. If you don't enable these features it won't work.
 ```
 M600                 ; change filament
 ```
