@@ -16,8 +16,8 @@ This software automates the second way giving you also the benefits of the first
 ## How does it work?
 Basically, you prepare the file .gcode of what you want to print and you will do it with your preferred slicing software. Batch Printing recognises what part of the .gcode has to batch printed and cooks a .gcode multiplying your parts. Between the parts there's the option to execute custom commands, the print can be paused or the extruder block can be moved in order to hit the printed parts and free the bed. This is up to you, but you can see some examples in Pause.md.
 
-## What you need to do
-In your slicer you need to modify your start gcode and your end gcode in your slicer settings in this way:
+## Installation
+In your preferred slicer you need to modify your Start gcode and your End gcode in your slicer's settings in this way:
 
 ### Start gcode
 ```
@@ -28,6 +28,9 @@ In your slicer you need to modify your start gcode and your end gcode in your sl
 ;end_startgcode
 ;start_bodygcode
 ```
+As the example
+![startgcode](https://user-images.githubusercontent.com/71249563/114771901-6cf62980-9d6d-11eb-82e3-f33286d8e929.PNG)
+
 ### End gcode
 ```
 ;end_bodygcode
@@ -37,5 +40,8 @@ In your slicer you need to modify your start gcode and your end gcode in your sl
 
 ;end_endgcode
 ```
+As the example
+
+
 ### Pause gcode
 Please, look at Pause.md for further information.
