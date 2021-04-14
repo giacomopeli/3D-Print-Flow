@@ -16,7 +16,11 @@ This software automates the second way giving you also the benefits of the first
 ## How does it work?
 Basically, you prepare the file .gcode of what you want to print and you will do it with your preferred slicing software. Batch Printing recognises what part of the .gcode has to batch printed and cooks a .gcode multiplying your parts. Between the parts there's the option to execute custom commands, the print can be paused or the extruder block can be moved in order to hit the printed parts and free the bed. This is up to you, but you can see some examples in Pause.md.
 
-## Installation
+## Installation and Configuration
+You can download the software [here](https://github.com/giacomopeli/batchprinting/releases)  
+After you've downloaded the file you need to control that the file spool.ico is in the same folder of batchprinting.exe.
+
+Then you need to configure come things.
 In your preferred slicer you need to modify your Start gcode and your End gcode in your slicer's settings in this way:
 
 ### Start gcode
@@ -118,4 +122,15 @@ For a smart use, you must define and set on your firmware NOZZLE_PARK_FEATURE an
 ```
 M600                 ; change filament
 ```
+## Usage
+### Selecting the file
+By clicking on "Select file .gcode" it opens a window where you can choose the file you have saved from your slicer and the path of your file appears on the left of the button.
 
+### Printing time
+If the slicer you use set print progress using M73 command and R parameter the software will show you how much time it takes to print all the parts. PrusaSlicer does it well.
+
+### Generating the batch file
+After you have defined how many copies you want you have only to generate the file. After this you can find the file in the same folder of the executable file batchprinting.exe.
+
+## Donations
+If you like this project and you want support its development by donating a coffee you can do it with PayPal [here](https://paypal.me/GiacomoPeli?locale.x=it_IT) :money_with_wings:  
