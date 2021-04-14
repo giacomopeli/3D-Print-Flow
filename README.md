@@ -28,7 +28,7 @@ In your preferred slicer you need to modify your Start gcode and your End gcode 
 ;end_startgcode
 ;start_bodygcode
 ```
-As the example
+As the example  
 ![startgcode](https://user-images.githubusercontent.com/71249563/114771901-6cf62980-9d6d-11eb-82e3-f33286d8e929.PNG)
 
 ### End gcode
@@ -40,7 +40,9 @@ As the example
 
 ;end_endgcode
 ```
-As the example
+As the example  
+![endgcode](https://user-images.githubusercontent.com/71249563/114771897-6cf62980-9d6d-11eb-9d77-568a82c8157c.PNG)
+
 
 
 ### Pause gcode
