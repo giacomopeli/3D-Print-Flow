@@ -1,7 +1,7 @@
 # Batch Printing
 
 ## Summary
-The purpose of this software is to give a simple and efficient way of batch printing solutions. 
+The purpose of this software is to give a simple and efficient way of batch printing solutions with FDM 3d printers. 
 
 There are a few ways to batch print, but this software will take you to the best way of doing it.
 
