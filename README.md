@@ -132,5 +132,3 @@ If the slicer you use set print progress using M73 command and R parameter the s
 ### Generating the batch file
 After you have defined how many copies you want you have only to generate the file. After this you can find the file in the same folder of the executable file batchprinting.exe.
 
-## Donations
-If you like this project and you want support its development by donating a coffee you can do it with PayPal [here](https://paypal.me/GiacomoPeli?locale.x=it_IT) :money_with_wings:  
