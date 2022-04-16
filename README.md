@@ -1,9 +1,9 @@
-# Batch Printing
+# 3D PrintFlow
 
 ## Summary
-The purpose of this software is to give a simple and efficient way of batch printing solutions with FDM 3d printers. 
+The purpose of this software is to give a simple and efficient way of _batch_ printing solutions with FDM 3d printers. 
 
-There are a few ways to batch print, but this software will take you to the best way of doing it.
+There are a few ways to _batch_ print, but this software will take you to the best way of doing it.
 
 Normally, when comes the need of producing the same part for many times you cover your bed's surface until it results full. But what will you do if a part detaches from the bed? Yes, you will throw your batch away. Same thing if the electric currents goes off. Resume the print and you will see a defective layer on all the parts, not the best. But why continue doing this? There's no reason.
 
