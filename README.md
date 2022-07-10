@@ -1,4 +1,4 @@
-# 3D PrintFlow
+# 3D Print Flow
 
 ## Summary
 The purpose of this software is to give a simple and efficient way of _batch_ printing solutions with FDM 3d printers. 
